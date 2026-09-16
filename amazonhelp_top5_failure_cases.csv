@@ -1,0 +1,6 @@
+Failure Mode,Evidence,Hypothesis
+Over-prediction of 'other',92 incorrect 'other' predictions,Weak separation between specific intents and 'other'
+Customer service confusion,42 customer_service errors,Overlapping customer-support language
+Product issue confusion,26 product_issue errors,Product complaints have varied wording
+Spelling / noisy input,2/4 refund typo tests passed,TF-IDF is sensitive to spelling variations
+Over-escalation,0 AUTO_HANDLE; 200 ESCALATE,Escalation policy is too conservative
