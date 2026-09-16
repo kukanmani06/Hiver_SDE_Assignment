@@ -1,5 +1,5 @@
 # Hiver_SDE_Assignment
-# Hiver SDE Intern — Take-Home Assignment
+
 
 ## 1. Problem Framing
 
