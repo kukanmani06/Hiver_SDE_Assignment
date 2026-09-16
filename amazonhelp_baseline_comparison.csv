@@ -1,0 +1,4 @@
+System,Accuracy,Macro_F1
+Majority baseline,0.075,0.0155
+TF-IDF + Logistic Regression,0.27,0.2896
+Final Support Agent,0.27,0.2896
