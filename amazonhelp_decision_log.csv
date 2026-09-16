@@ -1,0 +1,16 @@
+#,Decision,Choice,Reason
+1,Dataset,AmazonHelp historical data,Provides real customer-support conversations and resolutions.
+2,Golden set size,200 examples,Provides a manageable human-labelled evaluation set.
+3,Intent classes,9 canonical intents,Keeps the classification task consistent across the dataset.
+4,Text representation,TF-IDF,"Simple, fast and reproducible representation for text classification."
+5,Classifier,Logistic Regression,Provides a strong and interpretable baseline for multi-class text classification.
+6,Reply retrieval,Cosine similarity,Retrieves historically similar customer-support resolutions.
+7,Supported auto-handle intents,"delivery, order, prime, return, product_issue",Limits automatic handling to selected lower-risk support categories.
+8,Safety threshold,0.55 cosine similarity,Avoids auto-handling weak historical matches; threshold should be validated on the golden set.
+9,Sensitive intents,"refund_payment, account_login, customer_service",These categories are treated conservatively because they may require human support.
+10,Escalation policy,Conservative escalation,Reduces the risk of incorrect automatic responses.
+11,Robustness testing,Spelling variations,Tests whether the classifier can handle noisy customer messages.
+12,Baseline comparison,Majority baseline + TF-IDF Logistic Regression,Shows whether the proposed approach improves over simple baselines.
+13,LLM judge,FLAN-T5-small,Provides a free open-source model for automated reply-quality evaluation.
+14,Judge validation,Human-LLM agreement,Checks whether automated quality judgements agree with human labels.
+15,Failure analysis,Top 5 failure modes,Identifies the main weaknesses and possible improvement areas.
